@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>resultwindow</class>
+ <widget class="QDialog" name="resultwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+background-color: rgb(27,27,27);
+}
+
+QMessageBox {
+background -color: rgb(27,27,27);
+color: #ffffff;
+}
+
+QMessageBox QLabel {
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);
+}
+
+QMessageBox QPushButton::hover {
+background-color: #666;
+}
+
+QMessageBox QPushButton::pressed {
+background-color: #888;
+}
+
+QMessageBox QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+background-color: rgb(27, 27, 27);
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);
+}
+
+QMessageBox {
+    background-color: rgb(27, 27, 27);
+    color: #ffffff
+}
+
+QMessageBox QLabel {
+   font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+   color: rgb(255, 255, 255);
+}
+
+QMessageBox QPushButton::hover {
+background-color: #666;
+}
+
+QMessageBox QPushButton::pressed {
+background-color: #888;
+}
+
+QMessageBox QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

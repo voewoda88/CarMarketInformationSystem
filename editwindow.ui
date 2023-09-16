@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditWindow</class>
+ <widget class="QDialog" name="EditWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+background-color: rgb(27,27,27);
+}
+
+QMessageBox {
+background -color: rgb(27,27,27);
+color: #ffffff;
+}
+
+QMessageBox QLabel {
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);
+}
+
+QMessageBox QPushButton::hover {
+background-color: #666;
+}
+
+QMessageBox QPushButton::pressed {
+background-color: #888;
+}
+
+QMessageBox QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonCancel">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>590</y>
+     <width>161</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QPushButton::hover {
+background-color: #666;
+}
+
+QPushButton::pressed {
+background-color: #888;
+}</string>
+   </property>
+   <property name="text">
+    <string>Отмена</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>590</y>
+     <width>161</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QPushButton::hover {
+background-color: #666;
+}
+
+QPushButton::pressed {
+background-color: #888;
+}</string>
+   </property>
+   <property name="text">
+    <string>Редактировать</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>351</width>
+     <height>684</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="labelBrand">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Марка:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditBrand">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelModel">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Модель:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditModel">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelGeneration">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Поколение:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditGeneration">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelYear">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Год выпуска:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditYear">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelEngineVolume">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Объем двигателя:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditEngineVolume">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelGearboxType">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Тип КПП:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBoxGearboxType">
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QComboBox::hover {
+background-color: #666;
+}
+
+QComboBox::pressed {
+background-color: #888;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Выберете тип:</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Автомат</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Механика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Робот</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelBody">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Тип кузова: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBoxBody">
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QComboBox::hover {
+background-color: #666;
+}
+
+QComboBox::pressed {
+background-color: #888;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Выберете тип:</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Внедорожник</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Кабриолет</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Купе</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Минивэн</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Пикап</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Родстер</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Седан</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Универсал</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Хэтчбек</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Другой</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelEngineType">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Тип двигателя:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBoxEngineType">
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QComboBox::hover {
+background-color: #666;
+}
+
+QComboBox::pressed {
+background-color: #888;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Выберете тип:</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Бензин</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Бензин(пропан-бутан)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Бензин(метан)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Бензин(гибрид)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Дизель</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Дизель(гибрид)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Электро</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labeDriveUnit">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Привод:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBoxDriveUnit">
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QComboBox::hover {
+background-color: #666;
+}
+
+QComboBox::pressed {
+background-color: #888;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Выберете тип:</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Передний</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Задний</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Подключаемый полный</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Постоянный полный</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelMileage">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Пробег:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditMileage">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelPrice">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Цена: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditPrice">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

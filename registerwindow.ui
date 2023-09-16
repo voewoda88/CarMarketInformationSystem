@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>registerwindow</class>
+ <widget class="QDialog" name="registerwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>231</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+background-color: rgb(27,27,27);
+}
+
+QMessageBox {
+background -color: rgb(27,27,27);
+color: #ffffff;
+}
+
+QMessageBox QLabel {
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);
+}
+
+QMessageBox QPushButton::hover {
+background-color: #666;
+}
+
+QMessageBox QPushButton::pressed {
+background-color: #888;
+}
+
+QMessageBox QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>491</width>
+     <height>219</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineLogin">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #222;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="linePassword">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #222;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="confirmPassword">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Подтвердите пароль:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="password">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Пароль:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="buttonRegistration">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QPushButton::hover {
+background-color: #666;
+}
+
+QPushButton::pressed {
+background-color: #888;
+}</string>
+      </property>
+      <property name="text">
+       <string>Зарегистрироваться</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="buttonBack">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QPushButton::hover {
+background-color: #666;
+}
+
+QPushButton::pressed {
+background-color: #888;
+}</string>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineConfirmPassword">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #222;
+border: none;
+}</string>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="login">
+      <property name="styleSheet">
+       <string notr="true">font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Логин:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 600 13pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Зарегистрируйте новый аккаунт</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

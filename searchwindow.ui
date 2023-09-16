@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>searchwindow</class>
+ <widget class="QDialog" name="searchwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>143</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+background-color: rgb(27,27,27);
+}
+
+QMessageBox {
+background -color: rgb(27,27,27);
+color: #ffffff;
+}
+
+QMessageBox QLabel {
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);
+}
+
+QMessageBox QPushButton::hover {
+background-color: #666;
+}
+
+QMessageBox QPushButton::pressed {
+background-color: #888;
+}
+
+QMessageBox QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+  </property>
+  <widget class="QLineEdit" name="lineEditSearch">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>291</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+color: rgb(255, 255, 255);
+background-color: #333;
+border: none;
+}</string>
+   </property>
+   <property name="maxLength">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxSearch">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QComboBox::hover {
+background-color: #666;
+}
+
+QComboBox::pressed {
+background-color: #888;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Критерий:</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Марка</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Модель</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Поколение</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Год выпуска</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Объем двигателя</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Кузов</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Тип двигателя</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Тип КПП</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Привод</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Пробег</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Цена</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>110</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}
+
+QPushButton::hover {
+background-color: #666;
+}
+
+QPushButton::pressed {
+background-color: #888;
+}</string>
+   </property>
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelSearch">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 13pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Выберите критерий для поиска:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

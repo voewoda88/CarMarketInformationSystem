@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1145</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color: rgb(27,27,27);
+}
+QMessageBox {
+background-color: rgb(27,27,27);
+color: #ffffff;
+}
+
+QMessageBox QLabel {
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);
+}
+
+QMessageBox QPushButton::hover {
+background-color: #666;
+}
+
+QMessageBox QPushButton::pressed {
+background-color: #888;
+}
+
+QMessageBox QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1151</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView {
+background-color: rgb(27, 27, 27);
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+color: rgb(255, 255, 255);
+}
+
+QMessageBox {
+    background-color: rgb(27, 27, 27);
+    color: #ffffff
+}
+
+QMessageBox QLabel {
+   font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+   color: rgb(255, 255, 255);
+}
+
+QMessageBox QPushButton::hover {
+background-color: #666;
+}
+
+QMessageBox QPushButton::pressed {
+background-color: #888;
+}
+
+QMessageBox QPushButton {
+color: #ffffff;
+background-color: #333;
+font: 600 10pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1145</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
